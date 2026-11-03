@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Questions for Ani (I miss you)</title>
+<style>
+body{margin:0;font-family:Georgia,serif;background:linear-gradient(160deg,#fde2e4,#fff1e6 50%,#e2ece9);color:#3d2c2e;min-height:100vh}
+main{max-width:640px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:2rem;text-align:center;margin:0 0 8px}h1 small{display:block;font-size:1.1rem;color:#c06c84;font-style:italic}
+.intro{text-align:center;color:#6b5155;margin-bottom:28px}
+.q{display:block;background:#fffaf8cc;border-radius:16px;padding:16px;margin:14px 0;box-shadow:0 2px 10px #c06c8422}
+.n{display:inline-block;background:#c06c84;color:#fff;border-radius:50%;width:26px;height:26px;text-align:center;line-height:26px;font-size:.8rem;margin-right:8px;font-family:sans-serif}
+.t{font-size:1.05rem}textarea,input{width:100%;box-sizing:border-box;margin-top:10px;border:1px solid #e8c5cc;border-radius:10px;padding:10px;font:inherit;background:#fff}
+button{display:block;width:100%;padding:16px;border:0;border-radius:14px;background:#c06c84;color:#fff;font-size:1.1rem;margin-top:20px;cursor:pointer}
+#thanks{display:none;text-align:center;padding:60px 10px}#thanks h2{color:#c06c84}
+</style></head><body><main>
+<form id="f"><h1>Questions for Ani <small>(I miss you)</small></h1>
+<p class="intro">Twenty little questions, from easy to a bit deeper. Take your time, skip any you like. I just want to hear you. 💌</p>
+<label class="q"><span class="t">Your name (optional)</span><input name="name"></label>
+<label class="q"><span class="n">1</span><span class="t">If you could relive one ordinary day from your childhood, which would it be?</span><textarea name="q1" rows="3"></textarea></label>
+<label class="q"><span class="n">2</span><span class="t">What&#x27;s a song that instantly puts you in a better mood, and why?</span><textarea name="q2" rows="3"></textarea></label>
+<label class="q"><span class="n">3</span><span class="t">What&#x27;s something small that made you smile this week?</span><textarea name="q3" rows="3"></textarea></label>
+<label class="q"><span class="n">4</span><span class="t">If we had a free Saturday with no plans, how would you want to spend it?</span><textarea name="q4" rows="3"></textarea></label>
+<label class="q"><span class="n">5</span><span class="t">What&#x27;s a food that reminds you of home?</span><textarea name="q5" rows="3"></textarea></label>
+<label class="q"><span class="n">6</span><span class="t">What&#x27;s a dream you&#x27;ve had for years but rarely talk about?</span><textarea name="q6" rows="3"></textarea></label>
+<label class="q"><span class="n">7</span><span class="t">Who taught you the most about how to love someone?</span><textarea name="q7" rows="3"></textarea></label>
+<label class="q"><span class="n">8</span><span class="t">What&#x27;s something you&#x27;ve changed your mind about in the last few years?</span><textarea name="q8" rows="3"></textarea></label>
+<label class="q"><span class="n">9</span><span class="t">When do you feel most like yourself?</span><textarea name="q9" rows="3"></textarea></label>
+<label class="q"><span class="n">10</span><span class="t">What&#x27;s a memory of us that you think about more than I&#x27;d guess?</span><textarea name="q10" rows="3"></textarea></label>
+<label class="q"><span class="n">11</span><span class="t">What&#x27;s something you wish people asked you about more often?</span><textarea name="q11" rows="3"></textarea></label>
+<label class="q"><span class="n">12</span><span class="t">What&#x27;s a fear you&#x27;ve gotten braver about?</span><textarea name="q12" rows="3"></textarea></label>
+<label class="q"><span class="n">13</span><span class="t">What did you first notice about me, honestly?</span><textarea name="q13" rows="3"></textarea></label>
+<label class="q"><span class="n">14</span><span class="t">What&#x27;s something I do that makes you feel cared for?</span><textarea name="q14" rows="3"></textarea></label>
+<label class="q"><span class="n">15</span><span class="t">What&#x27;s one thing you&#x27;ve wanted to tell me but haven&#x27;t found the moment for?</span><textarea name="q15" rows="3"></textarea></label>
+<label class="q"><span class="n">16</span><span class="t">When you miss someone, what do you miss most: their voice, their presence, or the little routines?</span><textarea name="q16" rows="3"></textarea></label>
+<label class="q"><span class="n">17</span><span class="t">What does a &quot;home&quot; feel like to you, beyond a place?</span><textarea name="q17" rows="3"></textarea></label>
+<label class="q"><span class="n">18</span><span class="t">What&#x27;s a moment you felt really seen by me, or wished you had?</span><textarea name="q18" rows="3"></textarea></label>
+<label class="q"><span class="n">19</span><span class="t">If we could start one new tradition together, what would it be?</span><textarea name="q19" rows="3"></textarea></label>
+<label class="q"><span class="n">20</span><span class="t">Finish this sentence: &quot;When I think about us a year from now, I hope…&quot;</span><textarea name="q20" rows="3"></textarea></label>
+<button type="submit" id="b">Send it 💗</button></form>
+<div id="thanks"><h2>Thank you 💗</h2><p>Got it. I can't wait to read every word.</p></div>
+</main><script>
+const Q=["If you could relive one ordinary day from your childhood, which would it be?", "What's a song that instantly puts you in a better mood, and why?", "What's something small that made you smile this week?", "If we had a free Saturday with no plans, how would you want to spend it?", "What's a food that reminds you of home?", "What's a dream you've had for years but rarely talk about?", "Who taught you the most about how to love someone?", "What's something you've changed your mind about in the last few years?", "When do you feel most like yourself?", "What's a memory of us that you think about more than I'd guess?", "What's something you wish people asked you about more often?", "What's a fear you've gotten braver about?", "What did you first notice about me, honestly?", "What's something I do that makes you feel cared for?", "What's one thing you've wanted to tell me but haven't found the moment for?", "When you miss someone, what do you miss most: their voice, their presence, or the little routines?", "What does a \"home\" feel like to you, beyond a place?", "What's a moment you felt really seen by me, or wished you had?", "If we could start one new tradition together, what would it be?", "Finish this sentence: \"When I think about us a year from now, I hope\u2026\""];
+document.getElementById('f').onsubmit=async e=>{e.preventDefault();const b=document.getElementById('b');b.disabled=true;b.textContent='Sending…';
+const fd=new FormData(e.target);let txt='From: '+(fd.get('name')||'(no name)')+'
+
+';Q.forEach((q,i)=>{txt+=(i+1)+'. '+q+'
+→ '+(fd.get('q'+(i+1))||'(skipped)')+'
+
+';});
+try{const r=await fetch('https://ntfy.sh/ani-024875c51dad7f87',{method:'POST',body:txt,headers:{'Title':'New answers for Ani survey'}});if(!r.ok)throw 0;
+e.target.style.display='none';document.getElementById('thanks').style.display='block';}catch(_){b.disabled=false;b.textContent='Hmm, try again 💗';}};
+</script></body></html>
